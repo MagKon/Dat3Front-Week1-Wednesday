@@ -1,6 +1,7 @@
 import upper, {text1, text2, text3} from "./file1";
 import obj, {males, females} from "./file2";
 import MultiWelcome, {} from "./file3";
+import JokeComponent from "./JokeComponent";
 
 function App() {
   const person = obj;
@@ -19,12 +20,18 @@ function App() {
       <p>{text2}</p>
       <p>{text3}</p>
       <br></br>
+
       <h2>ex 2</h2>
       <p>{firstName}</p>
       <p>{email}</p>
       <br></br>
+
       <h2>ex 3</h2>
       <MultiWelcome />
+      <br></br>
+
+      <h2>ex 4</h2>
+      <JokeComponent />
     </>
   )
 }
