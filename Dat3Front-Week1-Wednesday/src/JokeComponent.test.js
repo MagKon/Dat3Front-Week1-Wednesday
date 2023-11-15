@@ -35,4 +35,22 @@ describe("JokeComponent", () => {
     // Check if the joke is rendered
     await waitFor(() => screen.findByText("Chuck Norris can divide by zero."));
   });
+
+  // test("Render a joke from dad jokes API", async () => {
+  //   // Fetch from mock api
+  //   global.fetch.mockResolvedValueOnce({
+  //     json: jest.fn().mockResolvedValueOnce(mockDadJokesResponse),
+  //   });
+
+  //   // Render the component
+  //   render(<JokeComponent />);
+
+  //   // Click the button to change the joke
+  //   fireEvent.click(screen.getByText("Get new Dad"));
+
+  //   // Check if the joke is rendered
+  //   await waitFor(() =>
+  //     screen.findByText("What do you call a cow with no legs? Ground beef.")
+  //   );
+  // });
 });
